@@ -7,4 +7,4 @@ Este navbar responsive utiliza solo CSS y un ícono de menú de hamburguesa (≡
 `
 
 ![](./screenshots/desktop.png)
-![](./screenshots/mobile.png)
+<img src="./screenshots/mobile.png" width="50%" >
