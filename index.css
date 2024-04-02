@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+
+
+/* Navbar */
+.navbar {
+    background: rgb(57, 57, 57);
+    position:fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.navbar ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li a{
+    display: block;
+    padding: 1rem;
+}
+
+.navbar li a:hover,
+.navbar .menu-btn:hover {
+  background-color: #2c2c2c;
+}
+
+.navbar .logo {
+    display: block;
+    float: left;
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Navbar menu*/
+.navbar .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* Navbar icon*/
+.navbar .menu-icon {
+    cursor: pointer;
+    float: right;
+    position: relative;
+    user-select: none;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 2;
+    padding-right: 0.5rem;
+}
+
+
+/* Navbar menu */
+.navbar .menu-btn {
+    display: none;
+}
+
+.navbar .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+
+@media (min-width: 768px) {
+    .navbar li {
+      float: left;
+    }
+    .navbar li a {
+      padding: 20px 30px;
+    }
+    .navbar .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .navbar .menu-icon {
+      display: none;
+    }
+  }
+
+
+
+/* Cards */
+.card {
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #ccc;
+    background-color: #f9f9f9;
+    margin: 0 1rem;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding-top: 5rem;
+}
